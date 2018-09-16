@@ -36,17 +36,12 @@ body {
 
 .logo-box {
 	position: absolute;
-	top: 40px;
+	top: 20px;
 	left: 40px;
 }
 
 .logo {
-	height: 35px;
-}
-
-.heading-primary {
-	color: white;
-	text-transform: uppercase;
+	height: 70px;
 }
 
 .text-box{
@@ -56,11 +51,25 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+.heading-primary {
+	color: white;
+	text-transform: uppercase;
+	backface-visibility: hidden;
+}
+
 .heading-primary-main {
 	display: block;
-	font-size: 60px;
+	font-size: 61px;
 	font-weight: 400;
-	letter-spacing: 38px;
+	letter-spacing: 40px;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+
+	/*
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+	*/
 }
 
 .heading-primary-sub {
@@ -68,4 +77,39 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 13px;
+	animation-name: moveInRight;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translateX(10px);	
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px);
+	}
 }
