@@ -14,5 +14,21 @@ Dark green: #28b485
 }
 
 body {
-	
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777777;
+	padding: 30px;
+}
+
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, 
+		                              rgba(126, 213, 111, 0.8), 
+		                              rgba(40, 180, 131, 0.8)),
+	url(../img/mount_mulanje_cover.jpg);
+	background-size: cover;
+	background-position: center right;
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 }
