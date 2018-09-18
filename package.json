@@ -1,0 +1,22 @@
+{
+  "name": "snowden-website",
+  "version": "1.0.0",
+  "description": "Landing page for Snowden",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsjones25/snowden-website.git"
+  },
+  "author": "Will Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsjones25/snowden-website/issues"
+  },
+  "homepage": "https://github.com/wsjones25/snowden-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
