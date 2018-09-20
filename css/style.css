@@ -135,3 +135,24 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.grid-container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .grid-container:not(:last-child) {
+    margin-bottom: 8rem; }
+  .grid-container .col-2-of-3 {
+    flex: 0 0 calc(2 / 3 * 100%); }
+  .grid-container .col-2-of-4 {
+    flex: 0 0 50%; }
+  .grid-container .col-3-of-4 {
+    flex: 0 0 75%; }
+
+.grid-card {
+  flex: 1 0 auto; }
+  .grid-card__box {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: orangered; }

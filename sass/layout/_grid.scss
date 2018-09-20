@@ -1,0 +1,32 @@
+.grid-container {
+	max-width: $grid-width;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		margin-bottom: $gutter-vertical;
+	}
+
+	.col-2-of-3 {
+		flex: 0 0 calc(2 / 3 * 100%);
+	}
+
+	.col-2-of-4 {
+		flex: 0 0 50%;
+	}
+
+	.col-3-of-4 {
+		flex: 0 0 75%;
+	}
+}
+
+.grid-card {
+	flex: 1 0 auto;
+
+	&__box {
+		margin-left: $gutter-horizontal;
+		margin-right: $gutter-horizontal;
+		background-color: orangered;
+	}
+}
