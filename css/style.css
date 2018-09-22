@@ -216,6 +216,34 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.tours-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .tours-card__side {
+    height: 50rem;
+    transition: all .8s ease;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .tours-card__side--front {
+      background-color: #fff; }
+    .tours-card__side--back {
+      transform: rotateY(180deg); }
+      .tours-card__side--back--1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  .tours-card:hover .tours-card__side--front {
+    transform: rotateY(-180deg); }
+  .tours-card:hover .tours-card__side--back {
+    transform: rotateY(0); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/mount-mulanje-cover.jpg);
@@ -271,7 +299,12 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
+  transform: skewY(-5deg);
   margin-top: -10rem; }
   .section-features > * {
-    transform: skewY(7deg); }
+    transform: skewY(5deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -7rem; }
