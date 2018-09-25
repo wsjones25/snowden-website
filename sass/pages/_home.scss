@@ -47,4 +47,9 @@
 	box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 	flex: 1 0 auto;
 	height: 40rem;
+
+	&__form {
+		width: 50%;
+		padding: 6rem;
+	}
 }
