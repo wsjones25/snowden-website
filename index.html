@@ -14,6 +14,27 @@
     </head>
     
     <body>
+        
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+            
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Mulanje Adventures</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -31,7 +52,7 @@
 
         <main>
 
-            <!-- Popular treks section -->
+            <!-- POPULAR TREKS SECTION -->
             <section class="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -135,9 +156,9 @@
                     <a href="#" class="btn btn--green">Book a trek</a>
                 </div>
             </section>
+            
 
-
-            <!-- Features section -->
+            <!-- FEATURES SECTION -->
             <section class="section-features">
                 
                 <div class="grid-container">
@@ -187,7 +208,7 @@
                 </div>
             </section>
             
-            <!-- About Section -->
+            <!-- ABOUT SECTION -->
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -227,7 +248,7 @@
                 </div>
             </section>
 
-            <!-- Customer stories section -->
+            <!-- CUSTOMER STORIES SECTION -->
             <section class="section-stories">
 
                 <div class="bg-video">
@@ -288,6 +309,7 @@
 
             </section>
 
+            <!-- BOOKING SECTION -->
             <section class="section-book">
                 <div class="grid-container">
                     <div class="book">
@@ -337,13 +359,11 @@
 
         </main>
 
+        <!-- FOOTER SECTION -->
         <footer class="footer">
-            <div class="footer__logo-box">
-                <img src="img/logo-white.png" alt="Full logo" class="footer__logo">  
-            </div>
             
             <div class="grid-container">
-                <div class="grid-card col-1-of-2">
+                <div class="grid-card col-1-of-3">
                     <div class="grid-card__box footer__navigation">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
@@ -353,10 +373,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="grid-card col-1-of-2">
+
+                <div class="grid-card col-1-of-3">
+                    <div class="grid-card__box footer__logo-box">
+                        <img src="img/logo-white.png" alt="Full logo" class="footer__logo">
+                    </div>
+                </div>
+
+                <div class="grid-card col-1-of-3">
                     <div class="grid-card__box">
                         <p class="footer__copyright">
-                            Built by <a href="" class="footer__link">Will Jones</a> for Snowden. &copy 2018 by Will Jones. All rights reserved.
+                            Built by <a href="" class="footer__link">Will Jones</a> for Snowden. &copy2018 by Will Jones. All rights reserved.
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 .footer {
 	background-color: $color-grey-dark-3;
-	padding: 10rem 0;
+	padding: 10rem 0 0 0;
 	font-size: 1.4rem;
 	color: $color-grey-light-1;
 
@@ -17,7 +17,8 @@
 	&__navigation {
 		border-top: 1px solid $color-grey-dark;
 		padding-top: 2rem;
-		display: inline-block;
+		display: block;
+		text-align: left;
 	}
 
 	&__list {
@@ -57,7 +58,8 @@
 		border-top: 1px solid $color-grey-dark;
 		padding-top: 2rem;
 		display: inline-block;
-		width: 80%;
+		width: 100%;
 		float: right;
+		text-align: right;
 	}
 }
