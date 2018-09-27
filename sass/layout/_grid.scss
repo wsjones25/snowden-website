@@ -39,5 +39,9 @@
 	&__box {
 		margin-left: $gutter-horizontal;
 		margin-right: $gutter-horizontal;
+
+		&--noleftmargin {
+			margin-left: 0; 
+		}
 	}
 }

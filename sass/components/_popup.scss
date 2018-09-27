@@ -1,0 +1,41 @@
+.popup {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba($color-black, .8);
+	z-index: 9999;
+
+	&__content {
+		@include absCenter;
+		width: 75%;
+		background-color: $color-white;
+		box-shadow: 0 2rem 4rem rgba($color-black, .2);
+		border-radius: 13px;
+		overflow: hidden;
+	}
+
+	&__left {
+		
+	}
+
+	&__right {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: $gutter-horizontal;
+		margin-right: $gutter-horizontal;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&__text {
+		flex: 1 0 auto;
+	}
+}

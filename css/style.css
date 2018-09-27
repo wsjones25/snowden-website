@@ -467,6 +467,38 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button:after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    overflow: hidden; }
+  .popup__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem; }
+  .popup__img {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+  .popup__text {
+    flex: 1 0 auto; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/mount-mulanje-cover.jpg);
@@ -513,6 +545,8 @@ body {
   .grid-card__box {
     margin-left: 2.5rem;
     margin-right: 2.5rem; }
+    .grid-card__box--noleftmargin {
+      margin-left: 0; }
 
 .footer {
   background-color: #333;
