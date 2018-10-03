@@ -38,6 +38,11 @@
 		background-color: $color-white;
 		color: $color-grey-dark;
 
+		&--more_info {
+			width: 110%;
+			display: inline-block;
+		}
+
 		&:after {
 			background-color: $color-white;
 		}
@@ -46,14 +51,16 @@
 	&--green {
 		background-color: $color-primary;
 		color: $color-white;
-
+		
 		&:after {
 			background-color: $color-primary;
 		}
 	}
 
-
-
+	&--block {
+		display: block !important;
+		text-align: center;
+	}
 
 	&:after {
 		content: "";

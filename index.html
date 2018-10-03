@@ -15,6 +15,7 @@
     
     <body>
         
+        <!-- NAVIGATION -->
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
@@ -25,17 +26,30 @@
             
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Mulanje Adventures</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Book now</a></li>
+                    <li class="navigation__item">
+                        <a href="#home" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>01</span>Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>02</span>About Mulanje Adventures</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#tours" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>03</span>Popular tours</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#stories" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>04</span>Stories</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact-us" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>05</span>Book now</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>06</span>FAQs</a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
-
-
-        <header class="header">
+        <!-- HEADER -->
+        <header class="header" id="home">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
@@ -46,17 +60,17 @@
                     <span class="heading-primary--sub">where adventures happen</span>
                 </h1>
 
-                <a href="#tourslink" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
 
         <main>
 
-            <!-- POPULAR TREKS SECTION -->
-            <section class="section-tours" id="tourslink">
+            <!-- POPULAR TOURS SECTION -->
+            <section class="section-tours" id="tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Most popular treks
+                        Most popular tours
                     </h2>
                 </div>
 
@@ -69,7 +83,7 @@
                                 </div>
                                 <h4 class="tours-card__heading">
                                     <span class="tours-card__heading-span tours-card__heading-span--1">
-                                        Likhubula Falls
+                                        Mountain Treks
                                     </span>
                                 </h4>
                                 <div class="tours-card__details">
@@ -87,6 +101,7 @@
                                     <p class="tours-card__price-only">Only</p>
                                     <p class="tours-card__price-value">$80</p>
                                     <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +114,7 @@
                                 </div>
                                 <h4 class="tours-card__heading">
                                     <span class="tours-card__heading-span tours-card__heading-span--2">
-                                        Chambe Peak
+                                        Likhubula Waterfall
                                     </span>
                                 </h4>
                                 <div class="tours-card__details">
@@ -117,6 +132,7 @@
                                     <p class="tours-card__price-only">Only</p>
                                     <p class="tours-card__price-value">$150</p>
                                     <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +145,7 @@
                                 </div>
                                 <h4 class="tours-card__heading">
                                     <span class="tours-card__heading-span tours-card__heading-span--3">
-                                        Sapitwa Peak
+                                        School Visits
                                     </span>
                                 </h4>
                                 <div class="tours-card__details">
@@ -147,12 +163,106 @@
                                     <p class="tours-card__price-only">Only</p>
                                     <p class="tours-card__price-value">$220</p>
                                     <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card col-1-of-3">
+                        <div class="grid-card__box tours-card">
+                            <div class="tours-card__side tours-card__side--front">
+                                <div class="tours-card__picture tours-card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="tours-card__heading">
+                                    <span class="tours-card__heading-span tours-card__heading-span--1">
+                                        Tea Plantations
+                                    </span>
+                                </h4>
+                                <div class="tours-card__details">
+                                    <ul>
+                                        <li>1 day tour</li>
+                                        <li>Swin in the falls</li>
+                                        <li>Guide</li>
+                                        <li>Water & snacks</li>
+                                        <li>Difficulty: Easy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tours-card__side tours-card__side--back tours-card__side--back--1">
+                                <div class="tours-card__price-box">
+                                    <p class="tours-card__price-only">Only</p>
+                                    <p class="tours-card__price-value">$80</p>
+                                    <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card col-1-of-3">
+                        <div class="grid-card__box tours-card">
+                            <div class="tours-card__side tours-card__side--front">
+                                <div class="tours-card__picture tours-card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="tours-card__heading">
+                                    <span class="tours-card__heading-span tours-card__heading-span--2">
+                                        Village Tours
+                                    </span>
+                                </h4>
+                                <div class="tours-card__details">
+                                    <ul>
+                                        <li>2 day tour</li>
+                                        <li>2,557 m</li>
+                                        <li>Guide & porter</li>
+                                        <li>Sleep in cozy huts</li>
+                                        <li>Difficulty: Medium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tours-card__side tours-card__side--back tours-card__side--back--2">
+                                <div class="tours-card__price-box">
+                                    <p class="tours-card__price-only">Only</p>
+                                    <p class="tours-card__price-value">$150</p>
+                                    <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card col-1-of-3">
+                        <div class="grid-card__box tours-card">
+                            <div class="tours-card__side tours-card__side--front">
+                                <div class="tours-card__picture tours-card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="tours-card__heading">
+                                    <span class="tours-card__heading-span tours-card__heading-span--3">
+                                        Local Market
+                                    </span>
+                                </h4>
+                                <div class="tours-card__details">
+                                    <ul>
+                                        <li>3 day tour</li>
+                                        <li>3,002 m</li>
+                                        <li>Guide & porter</li>
+                                        <li>Sleep in cozy huts</li>
+                                        <li>Difficulty: Hard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tours-card__side tours-card__side--back tours-card__side--back--3">
+                                <div class="tours-card__price-box">
+                                    <p class="tours-card__price-only">Only</p>
+                                    <p class="tours-card__price-value">$220</p>
+                                    <p class="tours-card__price-person">for two people</p>
+                                    <a href="#tours-popup" class="btn btn--white btn--white--more_info u-margin-top-medium">More info</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-top-huge">
+                <div class="u-center-text u-margin-top-medium">
                     <a href="#" class="btn btn--green">Book a trek</a>
                 </div>
             </section>
@@ -249,7 +359,7 @@
             </section>
 
             <!-- CUSTOMER STORIES SECTION -->
-            <section class="section-stories">
+            <section class="section-stories" id="stories">
 
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop >
@@ -310,7 +420,7 @@
             </section>
 
             <!-- BOOKING SECTION -->
-            <section class="section-book">
+            <section class="section-book" id="contact-us">
                 <div class="grid-container">
                     <div class="book">
                         <div class="book__form">
@@ -390,26 +500,57 @@
             </div>
         </footer>
 
-        <div class="popup">
-            <div class="popup__content grid-container">
-                <div class="col-1-of-4">
-                    <div class="popup__left grid-card__box--noleftmargin">
-                        <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                        <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">  
+        <!-- POPUP -->
+        <div class="popup" id="tours-popup">
+
+            <div class="popup__container">
+
+                <a href="#tours" class="popup__close">&times;</a>
+
+                <div class="popup__container__left">
+                    <div class="popup__container__left__item">
+                        <h2 class="heading-secondary u-margin-bottom-small">
+                            Mountain treks
+                        </h2>
+                    </div>
+
+                    <div class="popup__container__left__item">
+                        <div class="popup__container__left__item--columns">
+                            <h3 class="heading-tertiary">Chembe Peak</h3>
+                            <p class="u-margin-bottom-small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                            <h3 class="heading-tertiary">Chembe Peak</h3>
+                            <p class="u-margin-bottom-small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <a href="#" class="btn-text">View pictures &rarr;</a> 
+                        </div>
                     </div>
                 </div>
-                <div class="col-3-of-4">
-                    <div class="popup__right">
-                        <h2 class="heading-secondary">Start booking now</h2>
-                        <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
-                        <p class="popup__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                        <a href="#" class="btn btn--green">Book now</a>
+
+                <div class="popup__container__right">
+                    <div class="popup__container__right__item popup__container__right__item__price u-margin-bottom-small u-margin-top-small">
+                        <h3 class="heading-tertiary popup__container__right__item__price__trip">1 day -$50</h3>
+                        <h3 class="heading-tertiary popup__container__right__item__price__trip">2 day - $165</h3>
+                        <h3 class="heading-tertiary popup__container__right__item__price__trip">3 day - $235</h3>
+                    </div>
+                    <div class="popup__container__right__item">
+                        <p class="popup__container__right__item__bullets">&rarr; Private trek for two people</p>
+                        <p class="popup__container__right__item__bullets">&rarr; Guide & porter (optional)</p>
+                        <p class="popup__container__right__item__bullets">&rarr; 1 - 3 days</p>
+                        <p class="popup__container__right__item__bullets">&rarr; Different levels of difficulty</p>
+                        <p class="popup__container__right__item__bullets">&rarr; Waterfall visit (optional)</p>
+                        <p class="popup__container__right__item__bullets">&rarr; Meals and mountain accomodation</p>
+                    </div>
+                    <div class="popup__container__right__item u-margin-top-small">
+                        <a href="#" class="btn btn--green btn--block">Get in touch</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>
