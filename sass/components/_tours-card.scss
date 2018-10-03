@@ -7,7 +7,7 @@
 	height: 52rem;
 
 	&__side {
-		height: 52rem;
+		height: 48rem;
 		transition: all .8s ease;
 		font-size: 2rem;
 		position: absolute;
@@ -51,7 +51,7 @@
 	// FRONT SIDE STYLING
 	&__picture {
 		background-size: cover;
-		height: 23rem;
+		height: 21rem;
 		background-blend-mode: screen;
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -81,7 +81,7 @@
 		color: $color-white;
 		position: absolute;
 		top: 12rem;
-		right: 2rem;
+		right: 4rem;
 		text-align: right;
 		width: 50%;
 	}
