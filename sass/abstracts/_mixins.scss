@@ -4,3 +4,46 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+0 - 500px: 			Phone
+500px - 600px:   	Large phone
+600px - 900px: 		Tablet portrait
+900px - 1200px:		Tablet landscape
+1200px - 1800px: 	Normal styles
+1800px + 			Big desktop
+
+$breakpoint arguement choices:
+~ phone
+~ big-phone
+~ tab-port
+~ tab-land
+~ big-desktop
+
+ORDER: base + topography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: 31.25em) { @content }; //500px  
+	}
+	@if $breakpoint == big-phone {
+		@media (max-width: 37.5em) { @content }; //600px
+	}
+	@if $breakpoint == small-tab-port {
+		@media (max-width: 46.875em) { @content }; //750px
+	}
+	@if $breakpoint == tab-port {
+		@media (max-width: 56.25em) { @content }; //900px
+	}
+	@if $breakpoint == tab-land {
+		@media (max-width: 75em) { @content }; //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media (min-width: 112.5em) { @content }; //1800px
+	}
+}
