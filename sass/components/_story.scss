@@ -9,6 +9,21 @@
 	font-size: $default-font-size;
 	transform: skewX(-12deg); 
 
+	@include respond(big-phone) {
+		width: 100%;
+		padding: 3rem;
+		padding-left: 6rem;
+		margin: 0 3rem;
+		transform: skewX(0);
+	}
+
+	@include respond(phone) {
+		width: 100%;
+		padding: 2rem;
+		padding-left: 4rem;
+		margin: 0;
+	}
+
 	&__shape {
 		width: 15rem;
 		height: 15rem;
@@ -20,6 +35,11 @@
 		transform: translateX(-3rem) skewX(12deg);
 		position: relative;
 
+		@include respond(big-phone) {
+			transform: translateX(-3rem) skewX(0);
+			width: 12rem;
+			height: 12rem;
+		}
 	}
 
 	&__image {
@@ -32,6 +52,10 @@
 
 	&__text {
 		transform: skewX(12deg);
+
+		@include respond(big-phone) {
+			transform: skewX(0);
+		}
 	}
 
 	&__caption {

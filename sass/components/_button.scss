@@ -41,6 +41,10 @@
 		&--more_info {
 			width: 110%;
 			display: inline-block;
+
+			@include respond(tab-port) {
+				width: 80%;
+			}
 		}
 
 		&:after {
