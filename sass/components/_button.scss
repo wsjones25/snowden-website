@@ -53,7 +53,7 @@
 	}
 	
 	&--green {
-		background-color: $color-primary;
+		background-color: $color-primary !important;
 		color: $color-white;
 		
 		&:after {

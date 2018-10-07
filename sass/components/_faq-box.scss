@@ -1,0 +1,76 @@
+.faq-container {
+	padding: 15rem 0 5rem 0;
+
+	&__accordion-container {
+		padding: 0 10rem;
+
+		@include respond(tab-port) {
+			padding: 0 5rem;
+		}
+
+		@include respond(big-phone) {
+			padding: 0 2rem;
+		}
+	}
+}
+
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+#accordion .panel-title a{
+    display: block;
+    padding: 20px 70px 20px 20px;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: $color-primary;
+    border-bottom: 1.2px solid $color-primary;
+    position: relative;
+}
+
+#accordion .panel-title a.collapsed{ color: $color-primary; }
+#accordion .panel-title a.collapsed:hover{ color: $color-primary }
+#accordion .panel-title a:before,
+#accordion .panel-title a:after{
+    content: "";
+    width: 3px;
+    height: 10px;
+    background: $color-primary;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+#accordion .panel-title a:after{
+    right: 29px;
+    transform: rotate(45deg);
+}
+#accordion .panel-title a.collapsed:before{
+    transform: rotate(45deg);
+    background: $color-primary;
+}
+#accordion .panel-title a.collapsed:after{
+    transform: rotate(-45deg);
+    background: $color-primary;
+}
+#accordion .panel-title a.collapsed:hover:before,
+#accordion .panel-title a.collapsed:hover:after{ background: $color-primary-light }
+#accordion .panel-body{
+    padding: 10px 20px;
+    background: $color-primary-light;
+    border-top: none;
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
+}
