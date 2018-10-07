@@ -68,6 +68,11 @@ body {
     body {
       padding: 0; } }
 
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -168,6 +173,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+h4 {
+  margin-bottom: 0 !important; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -253,7 +261,7 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #55c57a;
+  background-color: #55c57a !important;
   color: #fff; }
   .btn--green:after {
     background-color: #55c57a; }
@@ -661,6 +669,127 @@ body {
             display: inline-block;
             margin-bottom: 1rem; }
 
+.contact {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-position: center left;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: left;
+  height: 100% !important; }
+  @media (max-width: 56.25em) {
+    .contact {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%), url(../img/nat-10.jpg); } }
+  @media (max-width: 46.875em) {
+    .contact {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url(../img/nat-10.jpg); } }
+  .contact__form {
+    width: 50%;
+    padding: 6rem; }
+    @media (max-width: 56.25em) {
+      .contact__form {
+        width: 60%; } }
+    @media (max-width: 46.875em) {
+      .contact__form {
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 37.5em) {
+      .contact__form {
+        padding: 3rem; } }
+    .contact__form__details {
+      font-size: 1.2rem; }
+      .contact__form__details a {
+        color: inherit; }
+      .contact__form__details:link, .contact__form__details:visited {
+        display: inline-block;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: all .4s;
+        color: #777; }
+      .contact__form__details:hover, .contact__form__details:active {
+        color: #55c57a !important;
+        transform: translateX(1rem);
+        outline: none;
+        text-decoration: none; }
+
+.faq-container {
+  padding: 15rem 0 5rem 0; }
+  .faq-container__accordion-container {
+    padding: 0 10rem; }
+    @media (max-width: 56.25em) {
+      .faq-container__accordion-container {
+        padding: 0 5rem; } }
+    @media (max-width: 37.5em) {
+      .faq-container__accordion-container {
+        padding: 0 2rem; } }
+
+#accordion .panel {
+  border: none;
+  border-radius: 0;
+  box-shadow: none; }
+
+#accordion .panel-heading {
+  padding: 0;
+  border: none;
+  border-radius: 0; }
+
+#accordion .panel-title a {
+  display: block;
+  padding: 20px 70px 20px 20px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #55c57a;
+  border-bottom: 1.2px solid #55c57a;
+  position: relative; }
+
+#accordion .panel-title a.collapsed {
+  color: #55c57a; }
+
+#accordion .panel-title a.collapsed:hover {
+  color: #55c57a; }
+
+#accordion .panel-title a:before,
+#accordion .panel-title a:after {
+  content: "";
+  width: 3px;
+  height: 10px;
+  background: #55c57a;
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out 0s; }
+
+#accordion .panel-title a:after {
+  right: 29px;
+  transform: rotate(45deg); }
+
+#accordion .panel-title a.collapsed:before {
+  transform: rotate(45deg);
+  background: #55c57a; }
+
+#accordion .panel-title a.collapsed:after {
+  transform: rotate(-45deg);
+  background: #55c57a; }
+
+#accordion .panel-title a.collapsed:hover:before,
+#accordion .panel-title a.collapsed:hover:after {
+  background: #7ed56f; }
+
+#accordion .panel-body {
+  padding: 10px 20px;
+  background: #7ed56f;
+  border-top: none;
+  font-size: 15px;
+  color: #fff;
+  line-height: 25px; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/mount-mulanje-cover.jpg);
@@ -1018,48 +1147,5 @@ body {
     .section-contact {
       padding: 6rem 2rem; } }
 
-.contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
-  background-size: cover;
-  background-position: center left;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  width: 100%;
-  text-align: left;
-  height: 100% !important; }
-  @media (max-width: 56.25em) {
-    .contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%), url(../img/nat-10.jpg); } }
-  @media (max-width: 46.875em) {
-    .contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url(../img/nat-10.jpg); } }
-  .contact__form {
-    width: 50%;
-    padding: 6rem; }
-    @media (max-width: 56.25em) {
-      .contact__form {
-        width: 60%; } }
-    @media (max-width: 46.875em) {
-      .contact__form {
-        width: 100%;
-        text-align: center; } }
-    @media (max-width: 37.5em) {
-      .contact__form {
-        padding: 3rem; } }
-    .contact__form__details {
-      font-size: 1.2rem; }
-      .contact__form__details a {
-        color: inherit; }
-      .contact__form__details:link, .contact__form__details:visited {
-        display: inline-block;
-        font-weight: 300;
-        padding: 1rem 2rem;
-        text-decoration: none;
-        transition: all .4s;
-        color: #777; }
-      .contact__form__details:hover, .contact__form__details:active {
-        color: #55c57a !important;
-        transform: translateX(1rem);
-        outline: none;
-        text-decoration: none; }
+.section-faq {
+  background-color: #f7f7f7; }
