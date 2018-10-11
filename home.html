@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
 
         <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -28,25 +30,25 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="index.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>01</span>Home</a>
+                        <a href="home.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>01</span>Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="/pages/about-us.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>02</span>About us</a>
+                        <a href="about-us.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>02</span>About us</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#tours" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>03</span>Popular tours</a>
+                        <a href="home.html#tours" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>03</span>Popular tours</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#stories" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>04</span>Reviews </a>
+                        <a href="home.html#stories" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>04</span>Reviews </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#contact-us" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>05</span>Contact us</a>
+                        <a href="home.html#contact-us" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>05</span>Contact us</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="/pages/faqs.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>06</span>FAQs</a>
+                        <a href="faqs.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>06</span>FAQs</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="/pages/gallery.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>07</span>Gallery</a>
+                        <a href="gallery.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>07</span>Gallery</a>
                     </li>
                 </ul>
             </nav>
@@ -54,8 +56,12 @@
 
         <!-- HEADER -->
         <header class="header" id="home">
-            <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo">
+            <div class="header__logo-box-1">
+                <div class="header__logo-box-2">
+                    <img src="img/logo-white.png" alt="Logo" class="header__logo-box-2__logo">
+                    <h6 class="header__logo-box-2__text header__logo-box-2__text--upper">Mulanje</h6>
+                    <h6 class="header__logo-box-2__text header__logo-box-2__text--lower">Adventures</h6>
+                </div>
             </div>
             
             <div class="header__text-box">
@@ -80,7 +86,7 @@
 
                 <div class="grid-container">
                     <div class="grid-card col-1-of-3">
-                        <div class="grid-card__box tours-card">
+                        <div class="tours-card">
                             <div class="tours-card__side tours-card__side--front">
                                 <div class="tours-card__picture tours-card__picture--1">
                                     &nbsp;
@@ -111,7 +117,7 @@
                         </div>
                     </div>
                     <div class="grid-card col-1-of-3">
-                        <div class="grid-card__box tours-card">
+                        <div class="grid-card tours-card">
                             <div class="tours-card__side tours-card__side--front">
                                 <div class="tours-card__picture tours-card__picture--2">
                                     &nbsp;
@@ -142,7 +148,7 @@
                         </div>
                     </div>
                     <div class="grid-card col-1-of-3">
-                        <div class="grid-card__box tours-card">
+                        <div class="grid-card tours-card">
                             <div class="tours-card__side tours-card__side--front">
                                 <div class="tours-card__picture tours-card__picture--3">
                                     &nbsp;
@@ -333,21 +339,20 @@
                 <div class="grid-container">
                     <div class="grid-card col-1-of-2--about">
                         <div class="grid-card__box">
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Highest peak: 3,002m (Sapitwa)
-                            </h3>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Location: Mulanje, Southern Malawi
-                            </h3>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                
-                            </h3>
+                            <div class="u-margin-bottom-medium">
+                                <h3 class="heading-tertiary popup__container__right__item__price__trip u-margin-bottom-small">
+                                    Highest peak: 3,002m (Sapitwa)
+                                </h3>
+                                <h3 class="heading-tertiary popup__container__right__item__price__trip u-margin-bottom-small">
+                                    Location: Mulanje, Southern Malawi
+                                </h3>
+                            </div>
                             
                             <p class="paragraph">
                                 Mount Mulanje, also known as the Mulanje Massif is a huge hulk of twisted granite rising majestically from the surrounding plains. Much of the Massif consists of dense green valleys and rivers that drop from sheer cliffs to form dazzling waterfalls. </br></br>With a number of peaks reaching heights of over 2,500m, the locals call it the ‘Island in the Sky’. On misty days, it’s easy to see why: the massif is shrouded in a cotton-wool haze, its highest peaks bursting through the cloud to touch the heavens.
                             </p>
                 
-                            <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a>
+                            <a href="about-us.html" class="btn-text u-margin-bottom-small">Learn more &rarr;</a>
                         </div>
                     </div>
                     <div class="grid-card col-1-of-2--about">
@@ -401,7 +406,7 @@
                         <figure class="story__shape">
                             <img src="img/nat-9.jpg" alt="Person on a tour" class="story__image">
                             <figcaption class="story__caption">
-                                Sergio Betsen
+                                Bertie Roberts
                             </figcaption>
                         </figure>
                         <div class="story__text">
@@ -456,9 +461,10 @@
                 <div class="grid-card--footer col-1-of-3--footer">
                     <div class="grid-card footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="/pages/about-us.html" class="footer__link">About us</a></li>
-                            <li class="footer__item"><a href="index.html#contact-us" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="pages/privacy.html" class="footer__link">Privacy</a></li>
+                            <li class="footer__item"><a href="about-us.html" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="home.html#contact-us" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="faqs.html" class="footer__link">FAQs</a></li>
+                            <li class="footer__item footer__item--insta"><a href="#" class="footer__link" target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -472,7 +478,7 @@
                 <div class="grid-card--footer col-1-of-3--footer">
                     <div class="grid-card">
                         <p class="footer__copyright">
-                            Built by <a href="https://www.linkedin.com/in/william-jones-a4394b65/" class="footer__link" target="_blank">Will Jones</a> for Mulanje Adventures. &copy2018 All rights reserved.
+                            Built with &hearts; by <a href="https://www.linkedin.com/in/william-jones-a4394b65/" class="footer__link" target="_blank">Will Jones</a> for Mulanje Adventures. &copy2018 All rights reserved.
                         </p>
                     </div>
                 </div>
@@ -526,7 +532,7 @@
                         <p class="popup__container__right__item__bullets">&rarr; Meals and mountain accomodation</p>
                     </div>
                     <div class="popup__container__right__item u-margin-top-small">
-                        <a href="#" class="btn btn--green btn--block">Get in touch</a>
+                        <a href="home.html#contact-us" class="btn btn--green btn--block">Get in touch</a>
                     </div>
                 </div>
 

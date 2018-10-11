@@ -21,14 +21,59 @@
 		height: 80vh;
 	}
 
-	&__logo-box {
-		position: absolute;
-		top: 3rem;
-		left: 4.5rem;
+	&__logo-box-1 {
+		position: relative;
+		top: 2.5rem;
+		left: 4rem;
+		width: 190px;
+		z-index: 2000;
+		
+		@include respond(tab-port) {
+			top: 3rem;
+			left: 3rem;
+		}
+
+		@include respond(big-phone) {
+			top: 2.5rem;
+			left: 2.5rem;
+		}
 	}
 
-	&__logo {
-		height: 8rem;
+	&__logo-box-2 {
+		position: relative;
+		z-index: 1000;
+
+		&__logo {
+			height: 8rem;
+		}
+		
+		&__text {
+			font-family: 'Rubik', sans-serif;
+			font-size: 1.4rem;
+			color: $color-white;
+			font-weight: 700;
+			letter-spacing: 0.15rem;
+			
+			&--upper {
+				position: absolute;
+				top: 1.4rem;
+				left: 6rem;
+
+				&--green {
+					color: $color-primary !important;
+				}
+			}
+
+			&--lower {
+				position: absolute;
+				top: 3rem;
+				left: 8rem;
+
+				&--green {
+					color: $color-primary !important;
+				}
+			}
+		}
 	}
 
 	&__text-box {

@@ -1,0 +1,41 @@
+.section-gallery {
+	background-color: $color-grey-light-1;
+	padding-bottom: 5rem;
+}
+
+.gallery-container {
+	padding: 10rem 0 5rem 0;
+
+	&__accordion-container {
+		padding: 0 10rem;
+
+		@include respond(tab-port) {
+			padding: 0 5rem;
+		}
+
+		@include respond(big-phone) {
+			padding: 0 2rem;
+		}
+	}
+}
+
+.gallery-card {
+	height: 20rem;
+	box-shadow: 0 3rem 3rem rgba($color-black, .4);
+	cursor: pointer;
+	text-decoration: none;
+	
+	&__image {
+		background-size: cover;
+		width: 100%;
+		height: 23rem;
+		border-radius: 3px;
+	}
+
+	&:hover {
+		transform: translateY(-1rem) scale(1.01);
+	}
+
+}
+
+
