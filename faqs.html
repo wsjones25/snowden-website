@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/icon-font.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
@@ -32,25 +34,25 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="../index.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>01</span>Home</a>
+                    <a href="home.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>01</span>Home</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="/pages/about-us.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>02</span>About us</a>
+                    <a href="about-us.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>02</span>About us</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="../index.html#tours" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>03</span>Popular tours</a>
+                    <a href="home.html#tours" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>03</span>Popular tours</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="../index.html#stories" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>04</span>Reviews</a>
+                    <a href="home.html#stories" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>04</span>Reviews</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="../index.html#contact-us" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>05</span>Contact us</a>
+                    <a href="home.html#contact-us" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>05</span>Contact us</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="/pages/faqs.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>06</span>FAQs</a>
+                    <a href="faqs.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>06</span>FAQs</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="/pages/gallery.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>07</span>Gallery</a>
+                    <a href="gallery.html" class="navigation__link" onclick="document.getElementById('navi-toggle').checked = false"><span>07</span>Gallery</a>
                 </li>
             </ul>
         </nav>
@@ -59,6 +61,13 @@
     <!-- FAQs -->
 
     <div class="section-faq">
+      <div class="header__logo-box-1">
+        <div class="header__logo-box-2">
+            <img src="img/logo-green.png" alt="Logo" class="header__logo-box-2__logo">
+            <h6 class="header__logo-box-2__text header__logo-box-2__text--upper header__logo-box-2__text--upper--green">Mulanje</h6>
+            <h6 class="header__logo-box-2__text header__logo-box-2__text--lower header__logo-box-2__text--lower--green">Adventures</h6>
+        </div>
+      </div>
 
       <div class="faq-container">
         <div class="u-center-text u-margin-bottom-big">
@@ -75,7 +84,7 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Section 1
+                                        What do I need to bring on a trek?
                                     </a>
                                 </h4>
                             </div>
@@ -89,7 +98,7 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Section 2
+                                        How do I pay?
                                     </a>
                                 </h4>
                             </div>
@@ -103,7 +112,7 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Section 3
+                                        Do I need a porter?
                                     </a>
                                 </h4>
                             </div>
@@ -128,23 +137,24 @@
             <div class="grid-card--footer col-1-of-3--footer">
                 <div class="grid-card footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="/pages/about-us.html" class="footer__link">About us</a></li>
-                        <li class="footer__item"><a href="../index.html#contact-us" class="footer__link">Contact us</a></li>
-                        <li class="footer__item"><a href="pages/privacy.html" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="about-us.html" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="home.html#contact-us" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="faqs.html" class="footer__link">FAQs</a></li>
+                        <li class="footer__item footer__item--insta"><a href="#" class="footer__link" target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="grid-card--footer col-1-of-3--footer">
                 <div class="grid-card footer__logo-box">
-                    <img src="../img/logo-white.png" alt="Full logo" class="footer__logo">
+                    <img src="img/logo-white.png" alt="Full logo" class="footer__logo">
                 </div>
             </div>
 
             <div class="grid-card--footer col-1-of-3--footer">
                 <div class="grid-card">
                     <p class="footer__copyright">
-                        Built by <a href="https://www.linkedin.com/in/william-jones-a4394b65/" class="footer__link" target="_blank">Will Jones</a> for Mulanje Adventures. &copy2018 All rights reserved.
+                        Built with &hearts; by <a href="https://www.linkedin.com/in/william-jones-a4394b65/" class="footer__link" target="_blank">Will Jones</a> for Mulanje Adventures. &copy2018 All rights reserved.
                     </p>
                 </div>
             </div>

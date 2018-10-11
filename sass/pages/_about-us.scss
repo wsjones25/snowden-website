@@ -1,0 +1,115 @@
+.section-about-us {
+	background-color: $color-grey-light-1;
+	height: 100%;
+	position: relative;
+}
+
+.snowden-pic {
+	height: 27rem;
+	width: 27rem;
+	filter: brightness(130%);
+	background-color: white;
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: 0 2rem 4rem rgba($color-black, .1);
+	top: 12rem;
+	right: 24rem;
+
+	@include respond(tab-land) {
+		top: 13rem;
+		right: 17rem;
+		height: 25rem;
+		width: 25rem;
+	}
+
+	@include respond(large-tab-port) {
+		height: 20rem;
+		width: 20rem;
+		top: 25rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__outer {
+		position: relative;
+
+		&--inside {
+			height: 27rem;
+			width: 27rem;
+			border-radius: 50%;
+			padding: 1.3rem;
+
+			@include respond(tab-land) {
+				height: 25rem;
+				width: 25rem;
+			}
+
+			@include respond(large-tab-port) {
+				height: 20rem;
+				width: 20rem;
+			}
+		}
+	}
+
+
+}
+
+.about-container {
+	margin: 10rem 28rem 0 28rem;
+	border-radius: 5px;
+	background-color: $color-white;
+	padding: 5rem;
+
+	@include respond(tab-land) {
+		margin: 10rem 22rem 0 22rem;
+	}
+
+	@include respond(large-tab-port) {
+		padding-top: 16rem;
+		margin-top: 15rem !important;
+		text-align: center;
+		margin: 10rem 5rem 0 5rem;
+	}
+
+	@include respond(big-phone) {
+		margin: 10rem 2rem 0 2rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	&__heading h2 {
+		margin-left: 0;
+
+		@include respond(large-tab-port) {
+			margin-left: 3rem;
+		}
+
+	}
+
+	&__text--large {
+		display: block;
+		width: 65%;
+
+		@include respond(large-tab-port) {
+			width: 100%;
+			text-align: center;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 10%;
+			padding-bottom: 3rem;
+			border-bottom: 1px solid $color-primary;
+
+			@include respond(large-tab-port) {
+				margin: 0 auto;
+			}
+
+			@include respond(big-phone) {
+				width: 20%;
+			}
+		}
+	}
+}

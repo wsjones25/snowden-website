@@ -124,6 +124,31 @@ body {
 	}
 }
 
+.paragraph-about {
+	font-size: $default-font-size;
+	margin-top: 2rem;
+	column-count: 2;
+	column-gap: 3.5rem;
+	-moz-column-count: 2;
+	-moz-column-gap: 3.5rem;
+	hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	padding-top: .5rem;
+
+	@include respond(big-phone) {
+		column-count: 1;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
 h4 {
 	margin-bottom: 0 !important;
+	font-size: 2rem;
+	font-weight: 300;
+	font-style: italic;
 }
