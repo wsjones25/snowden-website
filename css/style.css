@@ -185,6 +185,8 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   padding-top: .5rem; }
+  .paragraph-about span {
+    font-weight: 700; }
   @media (max-width: 37.5em) {
     .paragraph-about {
       column-count: 1; } }
@@ -1288,15 +1290,16 @@ h4 {
   @media (max-width: 62.5em) {
     .about-container {
       padding-top: 16rem;
-      margin-top: 15rem !important;
-      text-align: center;
-      margin: 10rem 5rem 0 5rem; } }
+      margin: 15rem 5rem 5rem 5rem !important; } }
   @media (max-width: 37.5em) {
     .about-container {
       margin: 10rem 2rem 0 2rem;
       padding-left: 3rem;
       padding-right: 3rem;
       padding-bottom: 3rem; } }
+  @media (max-width: 62.5em) {
+    .about-container__heading {
+      text-align: center; } }
   .about-container__heading h2 {
     margin-left: 0; }
     @media (max-width: 62.5em) {

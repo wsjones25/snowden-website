@@ -66,9 +66,7 @@
 
 	@include respond(large-tab-port) {
 		padding-top: 16rem;
-		margin-top: 15rem !important;
-		text-align: center;
-		margin: 10rem 5rem 0 5rem;
+		margin: 15rem 5rem 5rem 5rem !important;
 	}
 
 	@include respond(big-phone) {
@@ -78,14 +76,20 @@
 		padding-bottom: 3rem;
 	}
 
-	&__heading h2 {
-		margin-left: 0;
-
+	&__heading {
 		@include respond(large-tab-port) {
-			margin-left: 3rem;
+			text-align: center;
 		}
 
+		h2 {
+			margin-left: 0;
+
+			@include respond(large-tab-port) {
+			margin-left: 3rem;
+			}
+		}
 	}
+
 
 	&__text--large {
 		display: block;
