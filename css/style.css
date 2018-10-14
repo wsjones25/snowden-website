@@ -9,7 +9,9 @@
 $breakpoint arguement choices:
 ~ phone
 ~ big-phone
+~ small-tab-port
 ~ tab-port
+~ large-tab-port
 ~ tab-land
 ~ big-desktop
 
@@ -385,9 +387,9 @@ h4 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 48rem; }
+  height: 46rem; }
   .tours-card__side {
-    height: 48rem;
+    height: 46rem;
     transition: all .8s ease;
     font-size: 2rem;
     position: absolute;
@@ -402,11 +404,17 @@ h4 {
     .tours-card__side--back {
       transform: rotateY(180deg); }
       .tours-card__side--back--1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
       .tours-card__side--back--2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
       .tours-card__side--back--3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+      .tours-card__side--back--4 {
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+      .tours-card__side--back--5 {
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+      .tours-card__side--back--6 {
+        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
   .tours-card:hover .tours-card__side--front {
     transform: rotateY(-180deg); }
   .tours-card:hover .tours-card__side--back {
@@ -420,17 +428,17 @@ h4 {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .tours-card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-3-large.jpg); }
+      background-image: url(../img/nat-3-large.jpg); }
     .tours-card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-2-large.jpg); }
+      background-image: url(../img/nat-2-large.jpg); }
     .tours-card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: url(../img/nat-7.jpg); }
     .tours-card__picture--4 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-11.jpg); }
+      background-image: url(../img/nat-11.jpg); }
     .tours-card__picture--5 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-2-large.jpg); }
+      background-image: url(../img/nat-2-large.jpg); }
     .tours-card__picture--6 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: url(../img/nat-7.jpg); }
   .tours-card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -438,21 +446,30 @@ h4 {
     color: #fff;
     position: absolute;
     top: 12rem;
-    right: 4rem;
+    right: 1.5rem;
     text-align: right;
-    width: 50%; }
+    width: 100%; }
   .tours-card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .tours-card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
     .tours-card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
     .tours-card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+    .tours-card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+    .tours-card__heading-span--5 {
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+    .tours-card__heading-span--6 {
+      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
   .tours-card__details {
-    padding: 3rem; }
+    padding: 1rem; }
+    @media (max-width: 56.25em) {
+      .tours-card__details {
+        padding: 2.5rem 2.5rem 1rem 2.5rem; } }
     .tours-card__details ul {
       list-style: none;
       width: 80%;
@@ -548,7 +565,7 @@ h4 {
     position: relative; }
     @media (max-width: 37.5em) {
       .story__shape {
-        transform: translateX(-3rem) skewX(0);
+        transform: translateX(-3rem) skewX(0) translateY(-1rem);
         width: 12rem;
         height: 12rem; } }
   .story__image {
@@ -630,7 +647,7 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    background-color: #fff;
+    background-color: #f7f7f7;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 13px;
     overflow: hidden;
@@ -694,7 +711,7 @@ h4 {
           justify-content: flex-start;
           flex-flow: row wrap; }
           .popup__container__right__item__price__trip {
-            background-color: #eee;
+            background-color: #fff;
             margin-right: 1rem;
             padding: 1rem 1rem;
             border-radius: 10rem;
@@ -953,7 +970,8 @@ h4 {
       margin-bottom: 4rem; } }
   @media (max-width: 31.25em) {
     .grid-card {
-      margin-bottom: 4rem; } }
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .grid-card--footer {
     flex: 1 0 auto; }
     @media (max-width: 56.25em) {
@@ -966,9 +984,9 @@ h4 {
         padding-right: 6rem; } }
 
 .footer {
-  background-color: #333;
+  background-color: #2c2828;
   margin-top: -1px;
-  padding: 10rem 0 0 0;
+  padding: 8rem 0 0 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
   @media (max-width: 56.25em) {
@@ -1004,7 +1022,7 @@ h4 {
     text-transform: uppercase;
     display: inline-block;
     transition: all .2s;
-    background-color: #333;
+    background-color: #2c2828;
     color: #f7f7f7; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
@@ -1121,7 +1139,7 @@ h4 {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 1.2px;
-    background-color: #333;
+    background-color: #2c2828;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
@@ -1230,7 +1248,7 @@ h4 {
 
 .gallery-card {
   height: 20rem;
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
   text-decoration: none; }
   .gallery-card__image {
@@ -1238,6 +1256,9 @@ h4 {
     width: 100%;
     height: 23rem;
     border-radius: 3px; }
+    @media (max-width: 56.25em) {
+      .gallery-card__image {
+        height: 100%; } }
   .gallery-card:hover {
     transform: translateY(-1rem) scale(1.01); }
 

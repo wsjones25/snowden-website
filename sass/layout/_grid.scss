@@ -91,7 +91,8 @@
 	}
 
 	@include respond(phone) {
-		margin-bottom: $gutter-vertical-tiny;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	&--footer {

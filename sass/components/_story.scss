@@ -36,7 +36,7 @@
 		position: relative;
 
 		@include respond(big-phone) {
-			transform: translateX(-3rem) skewX(0);
+			transform: translateX(-3rem) skewX(0) translateY(-1rem);
 			width: 12rem;
 			height: 12rem;
 		}

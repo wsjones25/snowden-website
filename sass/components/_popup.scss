@@ -43,7 +43,7 @@
 	&__container {
 		@include absCenter;
 		width: 75%;
-		background-color: $color-white;
+		background-color: $color-grey-light-1;
 		box-shadow: 0 2rem 4rem rgba($color-black, .2);
 		border-radius: 13px;
 		overflow: hidden;
@@ -123,7 +123,7 @@
 					flex-flow: row wrap;
 
 					&__trip {
-						background-color: $color-grey-light-2;
+						background-color: $color-white;
 						margin-right: 1rem;
 						padding: 1rem 1rem;
 						border-radius: 10rem;
