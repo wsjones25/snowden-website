@@ -4,10 +4,10 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 48rem;
+	height: 46rem;
 
 	&__side {
-		height: 48rem;
+		height: 46rem;
 		transition: all .8s ease;
 		font-size: 2rem;
 		position: absolute;
@@ -30,11 +30,23 @@
 			}
 
 			&--2 {
-				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 			}
 
 			&--3 {
-				background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+			}
+
+			&--4 {
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+			}
+
+			&--5 {
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+			}
+
+			&--6 {
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 			}
 		}
 	}
@@ -58,18 +70,27 @@
 		border-top-right-radius: 3px;
 
 		&--1 {
-			background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-			url(../img/nat-5.jpg);
+			background-image: url(../img/nat-3-large.jpg);
 		}
 
 		&--2 {
-			background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-			url(../img/nat-6.jpg);
+			background-image: url(../img/nat-2-large.jpg);
 		}
 
 		&--3 {
-			background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-			url(../img/nat-7.jpg);
+			background-image: url(../img/nat-7.jpg);
+		}
+
+		&--4 {
+			background-image: url(../img/nat-11.jpg);
+		}
+
+		&--5 {
+			background-image: url(../img/nat-2-large.jpg);
+		}
+
+		&--6 {
+			background-image: url(../img/nat-7.jpg);
 		}
 	}
 
@@ -80,9 +101,9 @@
 		color: $color-white;
 		position: absolute;
 		top: 12rem;
-		right: 4rem;
+		right: 1.5rem;
 		text-align: right;
-		width: 50%;
+		width: 100%;
 	}
 
 	&__heading-span {
@@ -98,19 +119,41 @@
 
 		&--2 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-primary-light, .85), 
-			rgba($color-primary-dark, .85));
+			rgba($color-secondary-light, .85), 
+			rgba($color-secondary-dark, .85));
 		}
 
 		&--3 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-tertiary-light, .85), 
-			rgba($color-tertiary-dark, .85));
+			rgba($color-secondary-light, .85), 
+			rgba($color-secondary-dark, .85));
+		}
+
+		&--4 {
+			background-image: linear-gradient(to right bottom, 
+			rgba($color-secondary-light, .85), 
+			rgba($color-secondary-dark, .85));
+		}
+
+		&--5 {
+			background-image: linear-gradient(to right bottom, 
+			rgba($color-secondary-light, .85), 
+			rgba($color-secondary-dark, .85));
+		}
+
+		&--6 {
+			background-image: linear-gradient(to right bottom, 
+			rgba($color-secondary-light, .85), 
+			rgba($color-secondary-dark, .85));
 		}
 	}
 
 	&__details {
-		padding: 3rem;
+		padding: 1rem;
+
+		@include respond(tab-port) {
+			padding: 2.5rem 2.5rem 1rem 2.5rem;
+		}
 
 		ul {
 			list-style: none;

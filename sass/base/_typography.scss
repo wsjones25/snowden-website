@@ -137,6 +137,10 @@ body {
 	-webkit-hyphens: auto;
 	padding-top: .5rem;
 
+	span {
+		font-weight: 700;
+	}
+
 	@include respond(big-phone) {
 		column-count: 1;
 	}
