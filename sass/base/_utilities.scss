@@ -27,7 +27,11 @@
 }
 
 .u-margin-bottom-small { 
-	margin-bottom: 1.5rem !important; 
+	margin-bottom: 1.5rem !important;
+
+	@include respond(phone) {
+		margin-bottom: 0.8rem !important;
+	}
 }
 
 .u-margin-bottom-tiny { 
@@ -36,6 +40,10 @@
 
 .u-margin-top-small { 
 	margin-top: 1.5rem !important; 
+
+	@include respond(phone) {
+		margin-top: 1.2rem !important;
+	}
 }
 
 .u-margin-top-medium { 
