@@ -53,9 +53,10 @@
 
 	&__nav {
 		height: 100vh;
+		display: block;
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: -100%;
 		z-index: 1500;
 		opacity: 0;
 		width: 0;
@@ -113,6 +114,7 @@
 	&__checkbox:checked ~ &__nav {
 		opacity: 1;
 		width: 100%;
+		left: 0;
 	}
 
 	//ICON

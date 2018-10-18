@@ -26,7 +26,6 @@
 		top: 2.5rem;
 		left: 4rem;
 		width: 190px;
-		z-index: 2000;
 		
 		@include respond(tab-port) {
 			top: 3rem;
@@ -41,8 +40,7 @@
 
 	&__logo-box-2 {
 		position: relative;
-		z-index: 1000;
-
+		
 		&__logo {
 			height: 8rem;
 		}
@@ -60,7 +58,7 @@
 				left: 6rem;
 
 				&--green {
-					color: $color-primary !important;
+					color: $color-primary;
 				}
 			}
 
@@ -70,7 +68,7 @@
 				left: 8rem;
 
 				&--green {
-					color: $color-primary !important;
+					color: $color-primary;
 				}
 			}
 		}
@@ -87,4 +85,9 @@
 			top: 56%;
 		}
 	}
+}
+
+.navigation__checkbox:checked ~ .header__logo-box-1 {
+	display: none;
+	visibility: hidden;
 }
