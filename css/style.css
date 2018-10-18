@@ -233,7 +233,7 @@ h4 {
       margin-bottom: 0.8rem !important; } }
 
 .u-margin-bottom-tiny {
-  margin-bottom: 1.1rem !important; }
+  margin-bottom: 1.0rem !important; }
 
 .u-margin-top-small {
   margin-top: 1.5rem !important; }
@@ -414,17 +414,17 @@ h4 {
     .tours-card__side--back {
       transform: rotateY(180deg); }
       .tours-card__side--back--1 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .tours-card__side--back--2 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .tours-card__side--back--3 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .tours-card__side--back--4 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .tours-card__side--back--5 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .tours-card__side--back--6 {
-        background-image: linear-gradient(to right bottom, #42338e, #35277a); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   .tours-card:hover .tours-card__side--front {
     transform: rotateY(-180deg); }
   .tours-card:hover .tours-card__side--back {
@@ -442,13 +442,13 @@ h4 {
     .tours-card__picture--2 {
       background-image: url(../img/nat-2-large.jpg); }
     .tours-card__picture--3 {
-      background-image: url(../img/nat-7.jpg); }
+      background-image: url(../img/school.jpg); }
     .tours-card__picture--4 {
       background-image: url(../img/nat-11.jpg); }
     .tours-card__picture--5 {
-      background-image: url(../img/nat-2-large.jpg); }
+      background-image: url(../img/village.jpg); }
     .tours-card__picture--6 {
-      background-image: url(../img/nat-7.jpg); }
+      background-image: url(../img/market.jpg); }
   .tours-card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -464,17 +464,17 @@ h4 {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .tours-card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .tours-card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .tours-card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .tours-card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .tours-card__heading-span--5 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .tours-card__heading-span--6 {
-      background-image: linear-gradient(to right bottom, rgba(66, 51, 142, 0.85), rgba(53, 39, 122, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
   .tours-card__details {
     padding: 1rem; }
     @media (max-width: 56.25em) {
@@ -698,7 +698,7 @@ h4 {
       padding-right: 2.5rem;
       flex: 0 0 calc(2 / 5 * 100%);
       padding-left: 2.5rem;
-      border-left: 1px solid #55c57a;
+      border-left: 1.2px solid #55c57a;
       font-size: 1.4rem;
       display: flex;
       flex-direction: column;
@@ -717,11 +717,15 @@ h4 {
         .popup__container__right {
           margin-top: 1.5rem; } }
       .popup__container__right__item {
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column; }
         .popup__container__right__item__bullets {
           color: #55c57a;
           padding-bottom: 0.5rem;
-          padding-top: 0.5rem; }
+          padding-top: 0.5rem;
+          flex: 1 0 auto; }
           @media (max-width: 31.25em) {
             .popup__container__right__item__bullets {
               font-size: 1.4rem;
@@ -772,6 +776,9 @@ h4 {
     @media (max-width: 37.5em) {
       .contact__form {
         padding: 3rem; } }
+    @media (max-width: 31.25em) {
+      .contact__form {
+        padding: 1.5rem; } }
     .contact__form__details {
       font-size: 1.2rem; }
       .contact__form__details a {
