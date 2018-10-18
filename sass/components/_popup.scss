@@ -60,6 +60,10 @@
 			border-radius: 0;
 			margin: 0;
 		}
+
+		@include respond(big-phone) {
+			height: 100%;
+		}
 		
 		&__left {
 			flex: 0 0 calc(3 / 5 * 100%);

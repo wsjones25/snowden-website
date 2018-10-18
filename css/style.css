@@ -673,6 +673,9 @@ h4 {
         width: 100%;
         border-radius: 0;
         margin: 0; } }
+    @media (max-width: 37.5em) {
+      .popup__container {
+        height: 100%; } }
     .popup__container__left {
       flex: 0 0 calc(3 / 5 * 100%);
       padding-right: 2.5rem;
