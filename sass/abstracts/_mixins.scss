@@ -8,14 +8,18 @@
 // MEDIA QUERY MANAGER
 
 /*
-0 - 500px: 			Phone
+0 - 400px:			Small phone
+400px - 500px: 		Phone
 500px - 600px:   	Large phone
-600px - 900px: 		Tablet portrait
+600px - 750px:		Tablet small portrait
+750px - 900px: 		Tablet portrait
+900px - 1000px: 	Tablet large portrait
 900px - 1200px:		Tablet landscape
 1200px - 1800px: 	Normal styles
 1800px + 			Big desktop
 
 $breakpoint arguement choices:
+~ small-phone
 ~ phone
 ~ big-phone
 ~ small-tab-port
@@ -30,6 +34,9 @@ ORDER: base + topography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
+	@if $breakpoint == small-phone {
+		@media (max-width: 25em) { @content }; //400px  
+	}
 	@if $breakpoint == phone {
 		@media (max-width: 31.25em) { @content }; //500px  
 	}
