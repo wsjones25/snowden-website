@@ -1,12 +1,16 @@
 /*
-0 - 500px: 			Phone
+0 - 400px:			Small phone
+400px - 500px: 		Phone
 500px - 600px:   	Large phone
-600px - 900px: 		Tablet portrait
+600px - 750px:		Tablet small portrait
+750px - 900px: 		Tablet portrait
+900px - 1000px: 	Tablet large portrait
 900px - 1200px:		Tablet landscape
 1200px - 1800px: 	Normal styles
 1800px + 			Big desktop
 
 $breakpoint arguement choices:
+~ small-phone
 ~ phone
 ~ big-phone
 ~ small-tab-port
@@ -860,8 +864,7 @@ h4 {
     position: relative;
     top: 2.5rem;
     left: 4rem;
-    width: 190px;
-    z-index: 2000; }
+    width: 190px; }
     @media (max-width: 56.25em) {
       .header__logo-box-1 {
         top: 3rem;
@@ -871,8 +874,7 @@ h4 {
         top: 2.5rem;
         left: 2.5rem; } }
   .header__logo-box-2 {
-    position: relative;
-    z-index: 1000; }
+    position: relative; }
     .header__logo-box-2__logo {
       height: 8rem; }
     .header__logo-box-2__text {
@@ -886,13 +888,13 @@ h4 {
         top: 1.4rem;
         left: 6rem; }
         .header__logo-box-2__text--upper--green {
-          color: #55c57a !important; }
+          color: #55c57a; }
       .header__logo-box-2__text--lower {
         position: absolute;
         top: 3rem;
         left: 8rem; }
         .header__logo-box-2__text--lower--green {
-          color: #55c57a !important; }
+          color: #55c57a; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -902,6 +904,10 @@ h4 {
     @media (max-width: 37.5em) {
       .header__text-box {
         top: 56%; } }
+
+.navigation__checkbox:checked ~ .header__logo-box-1 {
+  display: none;
+  visibility: hidden; }
 
 .grid-container {
   max-width: 114rem;
@@ -1086,9 +1092,10 @@ h4 {
 
 .navigation__nav {
   height: 100vh;
+  display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 1500;
   opacity: 0;
   width: 0;
@@ -1131,7 +1138,8 @@ h4 {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  left: 0; }
 
 .navigation__icon {
   position: relative;
@@ -1227,6 +1235,9 @@ h4 {
   @media (max-width: 37.5em) {
     .section-contact {
       padding: 6rem 2rem; } }
+  @media (max-width: 37.5em) {
+    .section-contact {
+      padding: 6rem 0rem; } }
 
 .section-faq {
   background-color: #f7f7f7; }
@@ -1317,13 +1328,16 @@ h4 {
   @media (max-width: 62.5em) {
     .about-container {
       padding-top: 16rem;
-      margin: 15rem 5rem 5rem 5rem !important; } }
+      margin: 15rem 5rem 5rem 5rem; } }
   @media (max-width: 37.5em) {
     .about-container {
-      margin: 10rem 2rem 0 2rem;
+      margin: 15rem 4rem 0 4rem;
       padding-left: 3rem;
       padding-right: 3rem;
       padding-bottom: 3rem; } }
+  @media (max-width: 25em) {
+    .about-container {
+      margin: 15rem 3rem 0 3rem; } }
   @media (max-width: 62.5em) {
     .about-container__heading {
       text-align: center; } }
