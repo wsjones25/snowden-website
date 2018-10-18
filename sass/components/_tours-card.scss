@@ -26,27 +26,27 @@
 			transform: rotateY(180deg);
 
 			&--1 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 
 			&--2 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 
 			&--3 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 
 			&--4 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 
 			&--5 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 
 			&--6 {
-				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 			}
 		}
 	}
@@ -78,7 +78,7 @@
 		}
 
 		&--3 {
-			background-image: url(../img/nat-7.jpg);
+			background-image: url(../img/school.jpg);
 		}
 
 		&--4 {
@@ -86,11 +86,11 @@
 		}
 
 		&--5 {
-			background-image: url(../img/nat-2-large.jpg);
+			background-image: url(../img/village.jpg);
 		}
 
 		&--6 {
-			background-image: url(../img/nat-7.jpg);
+			background-image: url(../img/market.jpg);
 		}
 	}
 
@@ -113,38 +113,38 @@
 
 		&--1 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 
 		&--2 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 
 		&--3 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 
 		&--4 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 
 		&--5 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 
 		&--6 {
 			background-image: linear-gradient(to right bottom, 
-			rgba($color-secondary-light, .85), 
-			rgba($color-secondary-dark, .85));
+			rgba($color-primary-light, .85), 
+			rgba($color-primary-dark, .85));
 		}
 	}
 

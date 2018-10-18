@@ -94,7 +94,7 @@
 			padding-right: $gutter-horizontal;
 			flex: 0 0 calc(2 / 5 * 100%);
 			padding-left: $gutter-horizontal;
-			border-left: 1px solid $color-primary;
+			border-left: 1.2px solid $color-primary;
 			font-size: 1.4rem;
 			display: flex;
 			flex-direction: column;
@@ -118,11 +118,16 @@
 
 			&__item {
 				font-size: 1.6rem;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+
 
 				&__bullets {
 					color: $color-primary;
 					padding-bottom: 0.5rem;
 					padding-top: 0.5rem;
+					flex: 1 0 auto;
 
 					@include respond(phone) {
 						font-size: 1.4rem;
