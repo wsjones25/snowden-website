@@ -85,9 +85,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
-  @media (max-width: 31.25em) {
-    body {
-      font-size: 1.4rem; } }
 
 .heading-primary {
   color: #fff;
@@ -150,9 +147,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  @media (max-width: 31.25em) {
-    .heading-secondary {
-      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.05);
     text-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
@@ -183,10 +177,10 @@ body {
     .paragraph {
       column-count: 1; } }
   .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
       .paragraph:not(:last-child) {
-        margin-bottom: 1.5rem; } }
+        margin-bottom: 1rem; } }
 
 .paragraph-about {
   font-size: 1.6rem;
@@ -677,6 +671,9 @@ h4 {
     justify-content: flex-start;
     opacity: 0;
     transition: all .4s .2s; }
+    @media (max-width: 56.25em) {
+      .popup__container {
+        flex-flow: column; } }
     @media (max-width: 37.5em) {
       .popup__container {
         padding: 2rem;

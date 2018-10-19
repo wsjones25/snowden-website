@@ -55,6 +55,10 @@
 		opacity: 0;
 		transition: all .4s .2s;
 
+		@include respond(tab-port) {
+			flex-flow: column;
+		}
+
 		@include respond(big-phone) {
 			padding: 2rem;
 			width: 100%;
