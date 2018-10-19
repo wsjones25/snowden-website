@@ -150,6 +150,9 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
+  @media (max-width: 31.25em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.05);
     text-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
@@ -181,6 +184,9 @@ body {
       column-count: 1; } }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+    @media (max-width: 37.5em) {
+      .paragraph:not(:last-child) {
+        margin-bottom: 1.5rem; } }
 
 .paragraph-about {
   font-size: 1.6rem;
@@ -663,7 +669,6 @@ h4 {
     width: 75%;
     background-color: #f7f7f7;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
     border-radius: 13px;
     overflow: hidden;
     padding: 3rem;
@@ -677,16 +682,13 @@ h4 {
         padding: 2rem;
         width: 100%;
         border-radius: 0; } }
-    @media (max-width: 31.25em) {
-      .popup__container {
-        height: 100%; } }
     .popup__container__left {
       flex: 0 0 calc(3 / 5 * 100%);
       padding-right: 2.5rem; }
       @media (max-width: 56.25em) {
         .popup__container__left {
-          flex: 0 0 100%;
-          padding-right: 0; } }
+          padding-right: 0;
+          flex: 0 0 100%; } }
       .popup__container__left__item {
         font-size: 1.4rem; }
         .popup__container__left__item--columns {
@@ -698,6 +700,9 @@ h4 {
           -moz-hyphens: auto;
           -ms-hyphens: auto;
           -webkit-hyphens: auto; }
+          @media (max-width: 56.25em) {
+            .popup__container__left__item--columns {
+              column-count: 1; } }
     .popup__container__right {
       padding-right: 2.5rem;
       flex: 0 0 calc(2 / 5 * 100%);
@@ -730,9 +735,9 @@ h4 {
           flex: 1 0 auto; }
           @media (max-width: 31.25em) {
             .popup__container__right__item__bullets {
-              font-size: 1.4rem;
               padding-bottom: 0.3rem;
-              padding-top: 0.3rem; } }
+              padding-top: 0.3rem;
+              flex: 0; } }
           @media (max-width: 25em) {
             .popup__container__right__item__bullets {
               padding-bottom: 0.15rem;
