@@ -99,6 +99,10 @@ body {
 	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@include respond(phone) {
+		font-size: $small-font-size;
+	}
 }
 
 .paragraph {

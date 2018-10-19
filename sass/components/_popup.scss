@@ -1,8 +1,10 @@
 .popup {
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: fixed;
 	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	background-color: rgba($color-black, .8);
 	z-index: 9999;
@@ -18,7 +20,6 @@
 
 	&:target &__container {
 		opacity: 1;
-		transform: translate(-50%, -50%) scale(1);
 	}
 
 	&__close {
@@ -45,33 +46,32 @@
 		width: 75%;
 		background-color: $color-grey-light-1;
 		box-shadow: 0 2rem 4rem rgba($color-black, .2);
+		overflow-y: scroll;
 		border-radius: 13px;
 		overflow: hidden;
 		padding: 3rem;
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: flex-start;
 		opacity: 0;
-		transform: translate(-50%, -50%) scale(0.25);
 		transition: all .4s .2s;
 
 		@include respond(big-phone) {
 			padding: 2rem;
 			width: 100%;
 			border-radius: 0;
-			margin: 0;
 		}
 
-		@include respond(big-phone) {
-			height: 100%;
+		@include respond(phone) {
+			top: 0%;
+			left: 0%;
+			transform: translate(0%, 0%);
 		}
 		
 		&__left {
 			flex: 0 0 calc(3 / 5 * 100%);
 			padding-right: $gutter-horizontal;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-
+			
 			@include respond(tab-port) {
 				flex: 0 0 100%;
 				padding-right: 0;
@@ -102,22 +102,18 @@
 			font-size: 1.4rem;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: flex-start;
 
 			@include respond(tab-port) {
 				flex: 0 0 100%;
 				padding-left: 0;
 				padding-right: 0;
 				border-left: none;
-				margin-top: 3rem;
-			}
-
-			@include respond(big-phone) {
 				margin-top: 2rem;
 			}
 
-			@include respond(phone) {
-				margin-top: 1.5rem;
+			@include respond(big-phone) {
+				margin-top: 1rem;
 			}
 
 			&__item {
@@ -125,6 +121,7 @@
 				height: 100%;
 				display: flex;
 				flex-direction: column;
+				justify-content: flex-start;
 
 
 				&__bullets {
@@ -149,17 +146,24 @@
 					display: flex;
 					justify-content: flex-start;
 					flex-flow: row wrap;
+					display: block;
 
 					&__trip {
 						background-color: $color-white;
 						margin-right: 1rem;
 						padding: 1rem 1rem;
 						border-radius: 10rem;
-						display: inline-block;
 						margin-bottom: 1rem;
+						display: inline-block;
+
+						@include respond(phone) {
+							margin-right: .7rem;
+							padding: .9rem .9rem;
+							border-radius: 10rem;
+							margin-bottom: .9rem;
+						}
 					}
 				}
-
 			}
 		}
 	}
