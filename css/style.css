@@ -491,7 +491,7 @@ p {
       margin: 0 auto; }
       .tours-card__details ul li {
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         padding: 1rem; }
         .tours-card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
@@ -687,7 +687,10 @@ p {
           padding-right: 0;
           flex: 0 0 100%; } }
       .popup__container__left__item {
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
+        @media (max-width: 31.25em) {
+          .popup__container__left__item {
+            font-size: 1.5rem; } }
         .popup__container__left__item--columns {
           column-count: 2;
           column-gap: 3.5rem;
