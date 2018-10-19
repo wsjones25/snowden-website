@@ -4,10 +4,10 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 46rem;
+	height: 47rem;
 
 	&__side {
-		height: 46rem;
+		height: 47rem;
 		transition: all .8s ease;
 		font-size: 2rem;
 		position: absolute;
@@ -159,12 +159,11 @@
 			list-style: none;
 			width: 80%;
 			text-align: center;
-			font-size: 1rem;
 			margin: 0 auto;
 
 			li {
 				text-align: center;
-				font-size: 1.5rem;
+				font-size: 1.7rem;
 				padding: 1rem;
 
 				&:not(:last-child) {

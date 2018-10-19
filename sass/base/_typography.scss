@@ -95,10 +95,6 @@ body {
 	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
-
-	@include respond(phone) {
-		font-size: $small-font-size;
-	}
 }
 
 .paragraph {
@@ -117,6 +113,7 @@ body {
 
 	@include respond(big-phone) {
 		column-count: 1;
+		font-size: $small-font-size;
 	}
 
 	&:not(:last-child) {
@@ -159,4 +156,8 @@ h4 {
 	font-size: 2rem;
 	font-weight: 300;
 	font-style: italic;
+}
+
+p {
+	font-size: $default-font-size;
 }

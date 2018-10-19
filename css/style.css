@@ -82,7 +82,7 @@ a:focus {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.7;
   color: #777; }
 
@@ -115,7 +115,7 @@ body {
         font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 1.2rem;
     animation-name: moveInRight;
@@ -154,15 +154,12 @@ body {
     margin: 0; }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase; }
-  @media (max-width: 31.25em) {
-    .heading-tertiary {
-      font-size: 1.4rem; } }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.7rem; }
   @media (max-width: 56.25em) {
     .paragraph {
       column-count: 2;
@@ -175,7 +172,8 @@ body {
       -webkit-hyphens: auto; } }
   @media (max-width: 37.5em) {
     .paragraph {
-      column-count: 1; } }
+      column-count: 1;
+      font-size: 1.6rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
@@ -183,7 +181,7 @@ body {
         margin-bottom: 1rem; } }
 
 .paragraph-about {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
   column-count: 2;
   column-gap: 3.5rem;
@@ -207,6 +205,9 @@ h4 {
   font-size: 2rem;
   font-weight: 300;
   font-style: italic; }
+
+p {
+  font-size: 1.7rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -273,7 +274,7 @@ h4 {
   display: inline-block;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   border: none;
   cursor: pointer; }
 
@@ -328,7 +329,7 @@ h4 {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
@@ -400,9 +401,9 @@ h4 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 46rem; }
+  height: 47rem; }
   .tours-card__side {
-    height: 46rem;
+    height: 47rem;
     transition: all .8s ease;
     font-size: 2rem;
     position: absolute;
@@ -487,11 +488,10 @@ h4 {
       list-style: none;
       width: 80%;
       text-align: center;
-      font-size: 1rem;
       margin: 0 auto; }
       .tours-card__details ul li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         padding: 1rem; }
         .tours-card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
@@ -551,7 +551,7 @@ h4 {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   transform: skewX(-12deg); }
   @media (max-width: 37.5em) {
     .story {
@@ -753,10 +753,9 @@ h4 {
             display: inline-block; }
             @media (max-width: 31.25em) {
               .popup__container__right__item__price__trip {
-                margin-right: .7rem;
-                padding: .9rem .9rem;
-                border-radius: 10rem;
-                margin-bottom: .9rem; } }
+                margin-right: .9rem;
+                font-size: 1.6rem;
+                text-align: center; } }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
@@ -791,7 +790,13 @@ h4 {
       .contact__form {
         padding: 1.5rem; } }
     .contact__form__details {
-      font-size: 1.2rem; }
+      font-size: 1.6rem; }
+      @media (max-width: 31.25em) {
+        .contact__form__details {
+          font-size: 1.3rem; } }
+      @media (max-width: 25em) {
+        .contact__form__details {
+          font-size: 1.25rem; } }
       .contact__form__details a {
         color: inherit; }
       .contact__form__details:link, .contact__form__details:visited {

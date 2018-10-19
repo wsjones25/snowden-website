@@ -158,10 +158,9 @@
 						display: inline-block;
 
 						@include respond(phone) {
-							margin-right: .7rem;
-							padding: .9rem .9rem;
-							border-radius: 10rem;
-							margin-bottom: .9rem;
+							margin-right: .9rem;
+							font-size: $small-font-size;
+							text-align: center;
 						}
 					}
 				}

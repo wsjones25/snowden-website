@@ -53,7 +53,14 @@
 
 
 		&__details {
-			font-size: 1.2rem;
+			font-size: $small-font-size;
+
+			@include respond(phone) {
+				font-size: 1.3rem;
+			}
+			@include respond(small-phone) {
+				font-size: 1.25rem;
+			}
 
 			a {
 				color: inherit;
