@@ -82,7 +82,7 @@ a:focus {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
 
@@ -115,7 +115,7 @@ body {
         font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1.2rem;
     animation-name: moveInRight;
@@ -154,12 +154,12 @@ body {
     margin: 0; }
 
 .heading-tertiary {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.7rem; }
+  font-size: 1.6rem; }
   @media (max-width: 56.25em) {
     .paragraph {
       column-count: 2;
@@ -173,7 +173,7 @@ body {
   @media (max-width: 37.5em) {
     .paragraph {
       column-count: 1;
-      font-size: 1.6rem; } }
+      font-size: 1.5rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
@@ -181,7 +181,7 @@ body {
         margin-bottom: 1rem; } }
 
 .paragraph-about {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
   column-count: 2;
   column-gap: 3.5rem;
@@ -207,7 +207,7 @@ h4 {
   font-style: italic; }
 
 p {
-  font-size: 1.7rem; }
+  font-size: 1.6rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -274,7 +274,7 @@ p {
   display: inline-block;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   border: none;
   cursor: pointer; }
 
@@ -329,7 +329,7 @@ p {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
@@ -382,7 +382,7 @@ p {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 2rem;
   text-align: center;
   border-radius: 4px;
@@ -551,7 +551,7 @@ p {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transform: skewX(-12deg); }
   @media (max-width: 37.5em) {
     .story {
@@ -754,7 +754,7 @@ p {
             @media (max-width: 31.25em) {
               .popup__container__right__item__price__trip {
                 margin-right: .9rem;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 text-align: center; } }
 
 .contact {
@@ -790,7 +790,7 @@ p {
       .contact__form {
         padding: 1.5rem; } }
     .contact__form__details {
-      font-size: 1.6rem; }
+      font-size: 1.5rem; }
       @media (max-width: 31.25em) {
         .contact__form__details {
           font-size: 1.3rem; } }
