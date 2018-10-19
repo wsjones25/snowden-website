@@ -678,9 +678,9 @@ p {
       .popup__container {
         padding: 2rem;
         width: 100%;
-        max-height: calc(100vh - 80px);
-        overflow-y: auto;
-        border-radius: 0; } }
+        border-radius: 0;
+        max-height: calc(100vh - 30px);
+        overflow-y: auto; } }
     .popup__container__left {
       flex: 0 0 calc(3 / 5 * 100%);
       padding-right: 2.5rem; }
