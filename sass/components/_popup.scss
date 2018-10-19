@@ -61,6 +61,10 @@
 			width: 100%;
 			border-radius: 0;
 		}
+
+		@include respond(phone) {
+			height: 100%;
+		}
 		
 		&__left {
 			flex: 0 0 calc(3 / 5 * 100%);
