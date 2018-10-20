@@ -794,8 +794,20 @@ p {
     @media (max-width: 31.25em) {
       .contact__form {
         padding: 1.5rem; } }
+    .contact__form__text:after {
+      content: "";
+      display: block;
+      width: 10%;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #55c57a; }
+      @media (max-width: 46.875em) {
+        .contact__form__text:after {
+          margin: 0 auto; } }
     .contact__form__details {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      display: block; }
+      .contact__form__details:not(:last-child) {
+        margin-top: 2rem; }
       @media (max-width: 31.25em) {
         .contact__form__details {
           font-size: 1.3rem; } }

@@ -50,10 +50,27 @@
 			padding: 1.5rem;
 		}
 
+		&__text:after {
+			content: "";
+			display: block;
+			width: 10%;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid $color-primary;
+
+			@include respond(small-tab-port) {
+				margin: 0 auto;
+			}
+		}
+
 
 
 		&__details {
 			font-size: $small-font-size;
+			display: block;
+
+			&:not(:last-child) {
+				margin-top: 2rem;
+			}
 
 			@include respond(phone) {
 				font-size: 1.3rem;
